@@ -1,0 +1,13 @@
+header {
+  background-color: rgb(33, 33, 243);
+  font-size: 14px;
+}
+
+h1 {
+  display: block;
+  font-size: 80px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 800;
+  text-align: center;
+  color: rgb(9, 243, 21);
+}

@@ -127,9 +127,9 @@ body {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 3rem;
-  line-height: 1.19;
+  line-height: 1.1904761905;
   margin: 0px 0px 0.38rem 0px;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.3571428571rem;
 }
 @media (max-width: 48em) {
   .example__title {

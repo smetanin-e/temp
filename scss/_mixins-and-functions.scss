@@ -24,20 +24,18 @@ $maxWidthContainer: 1170;
 //================================================================================
 
 //===================Функция перевода из пикселей в относительные единицы==================
-// перевод в %
-@function prc($pxOne, $pxTwo) {
-    $result: math.div($pxOne, $pxTwo) * 100%;
-    @return $result;
-}
+
+
 // перевод в REM
-@function rem($px) {
-    $result: math.div($px / 16) + rem;
-    @return $result;
+@function stripUnit($value) {
+    @return $value / ($value * 0 + 1);
+}
+@function rem($pxValue) {
+    @return #{stripUnit($pxValue) / stripUnit(14)}rem;
 }
 // перевод в EM
-@function em($px) {
-    $result: math.div($px, 16) + em;
-    @return $result;
+@function em($pxValue) {
+    @return #{stripUnit($pxValue) / stripUnit(14)}rem;
 }
 
 //=========================================================================================
